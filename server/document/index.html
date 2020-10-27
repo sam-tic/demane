@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {}
+        
+        .form {
+            max-width: 1000px;
+            padding: 60px;
+            margin: auto;
+            position: relative;
+            height: 1100px;
+        }
+        
+        h5 {
+            color: brown;
+            text-align: center;
+            margin-top: 100px;
+            font-size: 20px;
+        }
+        
+        .id {
+            color: #000;
+        }
+        
+        .inputs {
+            box-sizing: border-box;
+            margin: 50px auto;
+            overflow: hidden;
+            padding: 1px;
+        }
+        
+        .inputs .group {
+            position: relative;
+            height: 40px;
+            border: 1px solid #c48a51;
+            margin-top: -1px;
+            float: right;
+        }
+        
+        .inputs .group label:nth-child(1) {
+            background: #f7cda3;
+            height: 38px;
+            position: absolute;
+            right: 0;
+            z-index: 100;
+            line-height: 40px;
+            padding: 0 5px;
+            color: #9c642c;
+            border-left: 1px solid #c48a51;
+            margin: 0 !important;
+        }
+        
+        .inputs label:nth-child(2) {
+            background: #f7cda3;
+            height: 38px;
+            position: absolute;
+            left: 0;
+            z-index: 100;
+            line-height: 40px;
+            padding: 0 5px;
+            color: #9c642c;
+            border-right: 1px solid #c48a51;
+            margin: 0 !important;
+        }
+        
+        .inputs input,
+        .inputs p {
+            line-height: 40px;
+            border: none;
+            width: 100%;
+            text-align: center;
+            height: 38px;
+        }
+        
+        .gr3 {
+            width: 37.5%;
+        }
+        
+        .gr4 {
+            width: 50%;
+        }
+        
+        .gr5 {
+            width: 62.5%;
+        }
+        
+        .gr8 {
+            width: 100%;
+        }
+        
+        .cadre {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .sign {
+            clear: both;
+            border: 1px solid #aaa;
+            margin: 50px 20px;
+            overflow: hidden;
+        }
+        
+        .sign div {
+            float: left;
+            border: 1px solid #aaa;
+            padding: 10px;
+            color: #933b53
+        }
+        
+        .sign div:nth-child(3) {
+            direction: rtl;
+        }
+        
+        .sign div:nth-child(1) {
+            direction: ltr;
+        }
+        
+        .sign div p {
+            text-align: justify;
+            padding: 20px 0 0 0px;
+            font-size: 16px;
+        }
+        
+        .sign div h6 {
+            font-size: 18px;
+        }
+        
+        .sign div:not(:nth-child(2)) {
+            width: 30%;
+            padding: 10px 40px;
+        }
+        
+        .signature {
+            width: 40%;
+            height: 200px;
+            border: 1px solid;
+        }
+        
+        .signature-img {
+            border: 1px solid;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <!-- file:///c:/xampp/htdocs/form/server/document/514-5149526_gold-ornamental-square-frame-clipart.png -->
+        <img class="cadre" src="file:///c:/xampp/htdocs/form/server/document/514-5149526_gold-ornamental-square-frame-clipart.png" alt="">
+        <h5><span>Client's Informations Number : </span><span class="id">5565254231</span><span> :  بيانات العميل رقم</span></h5>
+        <div class="inputs">
+
+            <div class="group gr4">
+                <label class="" for="name_e">الإسم</label>
+                <label class="" for="name_e"></label>
+                <p class="" type="text" name="" id="name_e" value="">ffff fffff</p>
+            </div>
+
+            <!---->
+
+            <div class="group gr4">
+                <label class="" for="name_e"></label>
+                <label class="" for="name_e">Name</label>
+                <input class="" type="text" name="" id="name_e" value=${name_e}>
+            </div>
+            <!---->
+
+            <div class="group gr4">
+                <label class="" for="name_e">رقم البطاقة الشخصية</label>
+                <label class="" for="name_e">Personal ID</label>
+                <input class="" type="text" name="" id="name_e" value=${id}>
+            </div>
+            <!---->
+
+            <div class="group gr4">
+                <label class="" for="name_e"> تاريخ الميلاد </label>
+                <label class="" for="name_e">Birth Date</label>
+                <input class="" type="text" name="" id="name_e" value=${date_b}>
+            </div>
+            <!---->
+
+            <div class="group gr3">
+                <label class="" for="name_e">الجنسية</label>
+                <label class="" for="name_e">Nationality</label>
+                <input class="" type="text" name="" id="name_e" value=${nationality}>
+            </div>
+            <!---->
+
+            <div class="group gr5">
+                <label class="" for="name_e">عنوان المنزل</label>
+                <label class="" for="name_e">Home Address</label>
+                <input class="" type="text" name="" id="name_e" value=${address}>
+            </div>
+            <!---->
+
+            <div class="group gr5">
+                <label class="" for="name_e">الجوال المعتمد للإخطار</label>
+                <label class="" for="name_e">َApproved Mobile</label>
+                <input class="" type="text" name="" id="name_e" value=${phone}>
+            </div>
+            <!---->
+
+            <div class="group gr3">
+                <label class="" for="name_e">صندوق البريد</label>
+                <label class="" for="name_e">P.O BOX</label>
+                <input class="" type="text" name="" id="name_e" value=${bp}>
+            </div>
+            <!---->
+
+            <div class="group gr8">
+                <label class="" for="name_e">أرقام معتمدة أخرى</label>
+                <label class="" for="name_e">Other Approved Numbers</label>
+                <input class="" type="text" name="" id="name_e" value=${other_phone}>
+            </div>
+            <!---->
+
+            <div class="group gr5">
+                <label class="" for="name_e"> جهة العمل </label>
+                <label class="" for="name_e">Place of work</label>
+                <input class="" type="text" name="" id="name_e" value=${work_s}>
+            </div>
+            <!---->
+
+            <div class="group gr3">
+                <label class="" for="name_e">الدخل الشهري</label>
+                <label class="" for="name_e">Monthly Income</label>
+                <input class="" type="text" name="" id="name_e" value=${salair}>
+            </div>
+
+            <!---->
+
+            <div class="group gr5">
+                <label class="" for="name_e">الوظيفة/المنصب</label>
+                <label class="" for="name_e">Job/Position</label>
+                <input class="" type="text" name="" id="name_e" value=${post}>
+            </div>
+            <!---->
+
+            <div class="group gr3">
+                <label class="" for="name_e">الإيراد السنوي</label>
+                <label class="" for="name_e">َAnnual Income</label>
+                <input class="" type="text" name="" id="name_e" value=${salair_year}>
+            </div>
+
+            <!---->
+
+            <div class="group gr8">
+                <label class="" for="name_e">إسم البنك/فرع البنك/رقم الحساب</label>
+                <label class="" for="name_e">Bank Name/Branch/Acc No.</label>
+                <input class="" type="text" name="" id="name_e" value=${bank}>
+            </div>
+            <!---->
+
+            <div class="group gr8">
+                <label class="" for="name_e">مصادر دخل أخرى</label>
+                <label class="" for="name_e">Other Income Resources</label>
+                <input class="" type="text" name="" id="name_e" value=${other_salair}>
+            </div>
+
+
+
+        </div>
+        <div class="sign">
+            <div>
+                <h6>Client's Signature :</h6>
+                <p>By signing on this document, I hereby acknowledge that all my data is correct and have approved on all what is mentioned on the front and back pages.</p>
+            </div>
+            <div class="signature">
+                <img class="signature-img" src=${signature} alt="" width="80%" />
+            </div>
+            <div>
+                <h6>توقيع العميل :</h6>
+                <p>بتوقيعي على هذه الوثيقة أقر بأن جميع بياناتي صحيحة وأني وافقت على ما ذكر في الصفحتين الأمامية و الخلفية</p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
